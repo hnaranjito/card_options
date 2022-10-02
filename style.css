@@ -1,0 +1,178 @@
+:root {
+    /**
+    * Colors
+    */
+    --white: hsla(0, 0%, 100%);
+    --black_08: rgb(207, 209, 212);
+    --blue-utp: rgb(0, 61, 108);
+    --red-utp: #DF091D;
+    --yellowgreen-utp: #BCBD09;
+    --orange-utp: #ED7714;
+    --magenta-utp: #711336;
+    --green-utp: #18954C;
+    --black_color: rgb(7, 6, 6);
+    --black-color_8: hsla(0, 0%, 0%, 0.12);
+
+    /**
+   * Typography
+   */
+  
+   --ff-vietnam: "Be Vietnam Pro", sans-serif;
+
+    --fs-1: 1.563rem;
+    --fs-2: 1.5rem;
+    --fs-3: 1.25rem;
+    --fs-4: 1.078rem;
+    --fs-5: 1rem;
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+     /**
+   * Radious
+   */
+  
+    --radius-6: 6px;
+
+    /**
+    * Shadow
+    */
+  
+    --shadow-1: 0 12px 20px 0 rgba(46, 40, 40, 0.555);
+    --shadow-2: 0 2px 10px 0 rgba(10, 10, 9, 0.39);
+    --shadow-3: 0 2px 20px 0 var(--black_08);
+
+}
+
+body {
+    background-color: gray;
+}
+
+html {
+    font-family: var(--ff-vietnam);
+    scroll-behavior: smooth;
+}
+
+li { list-style: none; }
+
+p { padding: 0; }
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.row_app {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_main {
+    display: flex;
+    background: transparent;
+    z-index: 0;
+}
+
+.card_info {
+    width: 600px;
+    height: 500px;
+    margin: 1rem;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: var(--radius-6);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
+
+.card_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: -0.5rem; 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-6);
+    box-shadow: var(--shadow-2);
+    z-index: 9999;
+}
+
+.uno {
+    background: var(--blue-utp);
+}
+
+.dos {
+    background: var(--red-utp);
+}
+
+.tres {
+    background: var(--green-utp);
+}
+
+.cuatro {
+    background: var(--yellowgreen-utp);
+}
+
+
+.card_title {
+    padding-top: 10px;
+    margin-right: 200px;
+    font-size: x-large;
+    font-weight: var(--fw-600);
+    color: var(--blue-utp);
+}
+
+.card_title p {
+    margin-left: 145px;
+}
+
+.divider {
+    height: 1px;
+    background: var(--bg, var(--black-color_8));
+    margin-block: var(--mb, 8px);
+}
+
+.card_divider {
+    --bg: var(var(--black-color_8);
+    --mb: 25px;
+    )    
+}
+
+.card_option {
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;    
+    margin-top: -3rem; 
+}
+
+.card_option p {    
+    color: var(--blue-utp);
+}
+
+.item_option li {
+    color: var(--black_color);
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.item_option .material-symbols-outlined {
+    color: #711336;
+}
+
+.card_option--click {
+    cursor: pointer;
+}
